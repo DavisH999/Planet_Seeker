@@ -41,7 +41,8 @@ public class GameActivity extends AppCompatActivity {
     Vibrator vibrator;
     VibrationEffect oneShotVibrationEffect;
     SoundPool soundPool;
-    int soundID;
+    int soundWinId;
+    int soundScanId;
     private String game;
 
     @Override
@@ -299,11 +300,13 @@ public class GameActivity extends AppCompatActivity {
                     // play 1s vibrate
                     vibrator.vibrate(oneShotVibrationEffect);
                     // play sound
-                    soundPool.play(soundID,1,1,1,0,1);
+                    soundPool.play(soundWinId,1,1,1,0,1);
                 }
                 else
                 {
                     button.setText(String.valueOf(numberOfHiddenTargets));
+                    // play sound
+                    soundPool.play(soundScanId,1,1,1,0,1);
                 }
             }
             else if(click.getClickTimes() == 2)
@@ -311,6 +314,8 @@ public class GameActivity extends AppCompatActivity {
                 if(click.getIsTarget() == true)
                 {
                     button.setText(String.valueOf(numberOfHiddenTargets));
+                    // play sound
+                    soundPool.play(soundScanId,1,1,1,0,1);
                 }
             }
             else
@@ -326,10 +331,11 @@ public class GameActivity extends AppCompatActivity {
                 .setUsage(AudioAttributes.USAGE_GAME)
                 .build();
         soundPool = new SoundPool.Builder()
-                .setMaxStreams(1)
+                .setMaxStreams(2)
                 .setAudioAttributes(audioAttributes)
                 .build();
-        soundID = soundPool.load(this, R.raw.game_win, 1);
+        soundWinId = soundPool.load(this, R.raw.game_win, 1);
+        soundScanId = soundPool.load(this,R.raw.scan,1);
     }
 
     private void initializeVibration() {
