@@ -35,6 +35,7 @@ public class GameActivity extends AppCompatActivity {
     // game page
     // added sound support.
     // improve sound support.
+    // add strings.xml
     int sound  = 0;
 
     Game instanceOfGame;
