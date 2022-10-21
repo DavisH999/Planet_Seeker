@@ -33,6 +33,9 @@ import ca.cmpt276.cmpt276assignment3.model.Game;
 
 public class GameActivity extends AppCompatActivity {
     // game page
+    // added sound support.
+    // improve sound support.
+    int sound  = 0;
 
     Game instanceOfGame;
     private static int NUM_ROWS;
