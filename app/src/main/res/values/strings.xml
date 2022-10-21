@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">CMPT276 Assignment3</string>
+    <string name="intro">"Planets seeker:\n"
+            "When playing the game, it is free to click cells to search for a planets. If you find a planet, which is great."
+            "If you click a cell not containing a planet, the cell will show you the number of hidden planets in that row and column."
+            "You can click a cell of a planet, the cell will show you the number of hidden planets in that row and column as well.\n"</string>
+    <string name="course">"Course page:\n"
+            "https://opencoursehub.cs.sfu.ca/bfraser/grav-cms/cmpt276/home\n"</string>
+    <string name="author">"Author:\n"
+            "Written by Dongwei Han, a student taking CMPT276 at SFU.\n"</string>
+    <string name="res">"Resources:\n"
+            "1. https://www.space.com/44-venus-second-planet-from-the-sun-brightest-planet-in-solar-system.html\n"
+            "2. https://www.mos.org/planetarium/explore-the-universe-live\n"
+            "3. https://www.freepik.com/free-vector/confetti-background-4th-july-holiday_9020808.htm#query=celebrate&amp;position=0&amp;from_view=keyword\n"
+            "4. https://freesound.org/people/MLaudio/sounds/615099/\n"</string>
+    <string name="thanks">"Thank you so much for playing this game called planets seeker!\n"</string>
+    <string name="help">help</string>
+    <string name="play_game">Play game</string>
+    <string name="options">Options</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="message">Great! You found all planets and win the game!</string>
+    <string name="select_board_size">Select board size</string>
+    <string name="select_number_planets">Select number planets</string>
+    <string name="planet_seeker_by_dongwei_han">Planet Seeker By Dongwei Han</string>
+    <string name="go_to_main_menu">Go to main menu</string>
+    <string name="planet_seeker">Planet Seeker</string>
+    <string name="game">Game</string>
 </resources>

@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
     ImageView iv_welcome;
     TextView tv_title;
     Button btn_goToMainMenu;
+    private String planet_seeker_by_dongwei_han;
+    private String go_to_main_menu;
+    private String planet_seeker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,15 +54,18 @@ public class MainActivity extends AppCompatActivity {
         tv_title = findViewById(R.id.tv_title);
         btn_goToMainMenu = findViewById(R.id.btn_goToMainManu);
 
-        tv_title.setText("Planet Seeker By Dongwei Han");
+        planet_seeker_by_dongwei_han = getString(R.string.planet_seeker_by_dongwei_han);
+        tv_title.setText(planet_seeker_by_dongwei_han);
         tv_title.setTextColor(Color.WHITE);
-        btn_goToMainMenu.setText("Go to main menu");
+        go_to_main_menu = getString(R.string.go_to_main_menu);
+        btn_goToMainMenu.setText(go_to_main_menu);
 
     }
 
     private void setMyActionBar() {
         ActionBar supportActionBar = getSupportActionBar();
-        supportActionBar.setTitle("Planet Seeker");
+        planet_seeker = getString(R.string.planet_seeker);
+        supportActionBar.setTitle(planet_seeker);
     }
 
 }

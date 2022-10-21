@@ -8,12 +8,19 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class HelpActivity extends AppCompatActivity {
+    public String INTRO;
+    public String COURSE;
+    public String AUTHOR;
+    public String RES;
+    public String THANKS;
+    private String HELP;
     // help page
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
+
         setMyActionBar();
         setText();
     }
@@ -21,31 +28,20 @@ public class HelpActivity extends AppCompatActivity {
     private void setText() {
         TextView tv_help = findViewById(R.id.tv_help);
         tv_help.setTextColor(Color.WHITE);
-        String intro = "Planets seeker:\n" +
-                "When playing the game, it is free to click cells to search for a planets. If you find a planet, which is great." +
-                "If you click a cell not containing a planet, the cell will show you the number of hidden planets in that row and column." +
-                "You can click a cell of a planet, the cell will show you the number of hidden planets in that row and column as well.\n";
+        INTRO = getString(R.string.intro);
+        COURSE = getString(R.string.course);
+        AUTHOR = getString(R.string.author);
+        RES = getString(R.string.res);
+        THANKS = getString(R.string.thanks);
 
-        String course = "Course page:\n" +
-                "https://opencoursehub.cs.sfu.ca/bfraser/grav-cms/cmpt276/home\n";
-
-        String author =  "Author:\n" +
-                "Written by Dongwei Han, a student taking CMPT276 at SFU.\n";
-
-        String res = "Resources:\n" +
-                "1. https://www.space.com/44-venus-second-planet-from-the-sun-brightest-planet-in-solar-system.html\n" +
-                "2. https://www.mos.org/planetarium/explore-the-universe-live\n" +
-                "3. https://www.freepik.com/free-vector/confetti-background-4th-july-holiday_9020808.htm#query=celebrate&position=0&from_view=keyword\n" +
-                "4. https://freesound.org/people/MLaudio/sounds/615099/\n";
-
-        String thanks = "Thank you so much for playing this game called planets seeker!\n";
-
-        String info  = intro + "\n" + course + "\n" + author + "\n" + res + "\n"+ thanks;
+        String info  = INTRO + "\n" + COURSE + "\n" + AUTHOR + "\n" + RES + "\n"+ THANKS;
         tv_help.setText(info);
     }
 
     private void setMyActionBar() {
         ActionBar supportActionBar = getSupportActionBar();
-        supportActionBar.setTitle("Help");
+        HELP = getString(R.string.help);
+        supportActionBar.setTitle(HELP);
+
     }
 }
