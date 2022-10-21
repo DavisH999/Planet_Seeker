@@ -10,8 +10,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//main page
 public class MainActivity extends AppCompatActivity {
-    //main page
 
     ImageView iv_welcome;
     TextView tv_title;

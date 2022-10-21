@@ -28,8 +28,8 @@ import java.lang.reflect.Type;
 import ca.cmpt276.cmpt276assignment3.model.BoolAndInt;
 import ca.cmpt276.cmpt276assignment3.model.Game;
 
+// game page
 public class GameActivity extends AppCompatActivity {
-    // game page
 
     Game instanceOfGame;
     private static int NUM_ROWS;

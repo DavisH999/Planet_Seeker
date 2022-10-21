@@ -3,8 +3,8 @@ package ca.cmpt276.cmpt276assignment3.model;
 import java.util.ArrayList;
 import java.util.Random;
 
+// game logic
 public class Game {
-    // game logic
     private int NUM_ROWS;
     private int NUM_COLS;
     private int NUM_TARGETS;

@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TextView;
 
+// help page
 public class HelpActivity extends AppCompatActivity {
     public String INTRO;
     public String COURSE;
@@ -14,7 +15,6 @@ public class HelpActivity extends AppCompatActivity {
     public String RES;
     public String THANKS;
     private String HELP;
-    // help page
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

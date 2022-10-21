@@ -15,8 +15,8 @@ import com.google.gson.Gson;
 
 import ca.cmpt276.cmpt276assignment3.model.Game;
 
+// option page
 public class OptionsActivity extends AppCompatActivity {
-    // option page
 
     RadioGroup rg_selectBoardSize;
     RadioGroup rg_selectNumberTargets;

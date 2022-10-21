@@ -1,7 +1,7 @@
 package ca.cmpt276.cmpt276assignment3.model;
 
+// return object
 public class BoolAndInt {
-    // return object
     private int clickTimes;
     private boolean isTarget;
     private int numberOfTargets;

@@ -1,7 +1,7 @@
 package ca.cmpt276.cmpt276assignment3.model;
 
+// cell
 public class Unit {
-    // cell
     private boolean isTarget;
     private boolean isFound;
     private int clickTimes;

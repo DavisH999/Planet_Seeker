@@ -7,8 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+// menu page
 public class MenuActivity extends AppCompatActivity {
-    // menu page
 
     Button btn_playGame;
     Button btn_options;
