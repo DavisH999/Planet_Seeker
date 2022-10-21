@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="size_of_board">
+        <item>4 rows * 6 columns</item>
+        <item>5 rows * 10 columns</item>
+        <item>6 rows * 15 columns</item>
+    </string-array>
+
+    <string-array name="number_of_targets">
+        <item>6 planets</item>
+        <item>10 planets</item>
+        <item>15 planets</item>
+        <item>20 planets</item>
+    </string-array>
+</resources>
