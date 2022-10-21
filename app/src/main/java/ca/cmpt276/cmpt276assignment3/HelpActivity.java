@@ -13,7 +13,6 @@ public class HelpActivity extends AppCompatActivity {
     public String COURSE;
     public String AUTHOR;
     public String RES;
-    public String THANKS;
     private String HELP;
 
     @Override
@@ -32,9 +31,8 @@ public class HelpActivity extends AppCompatActivity {
         COURSE = getString(R.string.course);
         AUTHOR = getString(R.string.author);
         RES = getString(R.string.res);
-        THANKS = getString(R.string.thanks);
 
-        String info  = INTRO + "\n" + COURSE + "\n" + AUTHOR + "\n" + RES + "\n"+ THANKS;
+        String info  = INTRO + "\n" + COURSE + "\n" + AUTHOR + "\n" + RES;
         tv_help.setText(info);
     }
 
