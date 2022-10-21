@@ -1,11 +1,9 @@
 package ca.cmpt276.cmpt276assignment3;
 
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -16,7 +14,6 @@ import android.media.SoundPool;
 import android.os.Bundle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -33,10 +30,6 @@ import ca.cmpt276.cmpt276assignment3.model.Game;
 
 public class GameActivity extends AppCompatActivity {
     // game page
-    // added sound support.
-    // improve sound support.
-    // add strings.xml
-    int sound  = 0;
 
     Game instanceOfGame;
     private static int NUM_ROWS;
