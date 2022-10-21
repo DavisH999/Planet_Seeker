@@ -35,6 +35,7 @@ public class GameActivity extends AppCompatActivity {
     // game page
     // added sound support.
     // improve sound support.
+    // add strings.xml
     int sound  = 0;
 
     Game instanceOfGame;
@@ -48,6 +49,7 @@ public class GameActivity extends AppCompatActivity {
     VibrationEffect oneShotVibrationEffect;
     SoundPool soundPool;
     int soundID;
+    private String game;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -143,7 +145,8 @@ public class GameActivity extends AppCompatActivity {
 
     private void setMyActionBar() {
         ActionBar supportActionBar = getSupportActionBar();
-        supportActionBar.setTitle("Game");
+        game = getString(R.string.game);
+        supportActionBar.setTitle(game);
     }
 
     private void initial()
@@ -189,7 +192,6 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void onButtonClick(int row, int col) {
-        Log.e("TA22222 ",buttons[row][col].getWidth()+" "+buttons[row][col].getHeight());
         Button button = buttons[row][col];
 
         // lock button sizes
@@ -241,7 +243,6 @@ public class GameActivity extends AppCompatActivity {
     private void gameIsOver() {
         if(instanceOfGame.getNumberOfTargetsFound() == instanceOfGame.getNUM_TARGETS())
         {
-//            myAlterDialog();
             FragmentManager Manager = getSupportFragmentManager();
             MessageFragment dialog = new MessageFragment();
             dialog.show(Manager,"MessageDialog");
@@ -287,21 +288,6 @@ public class GameActivity extends AppCompatActivity {
         instanceOfGame.initial(NUM_ROWS,NUM_COLS,NUM_TARGETS);
     }
 
-    private void myAlterDialog() {
-        AlertDialog alertDialog = new AlertDialog.Builder(this)
-                .setTitle("YOU WIN!")
-                .setIcon(R.drawable.celebrate)
-                .setMessage("Congratulations!\nGreat work finding all the planets! ")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finish();
-                    }
-                })
-                .create();
-        alertDialog.show();
-    }
-
     private void gaming(int row, int col, Button button) {
         BoolAndInt click = instanceOfGame.click(row, col);
         int numberOfHiddenTargets = instanceOfGame.getNumberOfHiddenTargetsInARowAndAColumn(row, col);
@@ -321,7 +307,6 @@ public class GameActivity extends AppCompatActivity {
                     vibrator.vibrate(oneShotVibrationEffect);
                     // play sound
                     soundPool.play(soundID,1,1,1,0,1);
-
                 }
                 else
                 {
@@ -371,7 +356,6 @@ public class GameActivity extends AppCompatActivity {
                 int height = button.getHeight();
                 button.setMinHeight(height);
                 button.setMaxHeight(height);
-
             }
         }
     }

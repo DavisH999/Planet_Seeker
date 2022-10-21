@@ -29,6 +29,10 @@ public class OptionsActivity extends AppCompatActivity {
     int num_rows = 4, num_columns = 6,num_targets = 8;
     // default
     Game game;
+    private String select_board_size;
+    private String select_number_planets;
+    private String options;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -152,7 +156,6 @@ public class OptionsActivity extends AppCompatActivity {
         {
             num_targets = 20;
         }
-        Toast.makeText(this," "+num_targets,Toast.LENGTH_SHORT).show();
         game.initial(num_rows,num_columns,num_targets);
         saveGame();
         saveTargetsPanelsInstalled(checkedMessage);
@@ -180,16 +183,19 @@ public class OptionsActivity extends AppCompatActivity {
         rg_selectBoardSize = findViewById(R.id.rg_selectBoardSize);
         rg_selectNumberTargets = findViewById(R.id.rg_selectNumberTargets);
         tv_selectBoardSize = findViewById(R.id.tv_selectBoardSize);
-        tv_selectBoardSize.setText("Select Board Size");
+        select_board_size = getString(R.string.select_board_size);
+        tv_selectBoardSize.setText(select_board_size);
         tv_selectBoardSize.setTextColor(Color.WHITE);
         tv_selectNumberTargets = findViewById(R.id.tv_selectNumberTargets);
-        tv_selectNumberTargets.setText("Select Number Planets");
+        select_number_planets = getString(R.string.select_number_planets);
+        tv_selectNumberTargets.setText(select_number_planets);
         tv_selectNumberTargets.setTextColor(Color.WHITE);
     }
 
 
     private void setMyActionBar() {
         ActionBar supportActionBar = getSupportActionBar();
-        supportActionBar.setTitle("Options");
+        options = getString(R.string.options);
+        supportActionBar.setTitle(options);
     }
 }

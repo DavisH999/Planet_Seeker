@@ -13,6 +13,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
 public class MessageFragment extends AppCompatDialogFragment {
+
+    private String title;
+    private String message;
+
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
@@ -33,9 +37,11 @@ public class MessageFragment extends AppCompatDialogFragment {
         };
 
         // Build alter dialog
+        title = getString(R.string.congratulations);
+        message = getString(R.string.message);
         AlertDialog alertDialog = new AlertDialog.Builder(getActivity())
-                .setTitle("congratulations.")
-                .setMessage("Great! You found all planets and win the game!")
+                .setTitle(title)
+                .setMessage(message)
                 .setView(view)
                 .setPositiveButton(android.R.string.ok, listener)
                 .create();

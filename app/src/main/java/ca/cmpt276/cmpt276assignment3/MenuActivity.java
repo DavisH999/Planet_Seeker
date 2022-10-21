@@ -24,11 +24,14 @@ public class MenuActivity extends AppCompatActivity {
         setMyActionBar();
         initial();
         btn_playGame.setOnClickListener(v -> onPlayGameClick());
-        btn_playGame.setText("Play Game");
+        String play_game = getString(R.string.play_game);
+        btn_playGame.setText(play_game);
         btn_options.setOnClickListener(v -> onOptionsClick());
-        btn_options.setText("Options");
+        String options = getString(R.string.options);
+        btn_options.setText(options);
         btn_help.setOnClickListener(v -> onHelpClick());
-        btn_help.setText("Help");
+        String help = getString(R.string.help);
+        btn_help.setText(help);
     }
 
     private void onPlayGameClick() {
@@ -55,6 +58,7 @@ public class MenuActivity extends AppCompatActivity {
 
     private void setMyActionBar() {
         ActionBar supportActionBar = getSupportActionBar();
-        supportActionBar.setTitle("Main Menu");
+        String main_menu = getString(R.string.main_menu);
+        supportActionBar.setTitle(main_menu);
     }
 }
