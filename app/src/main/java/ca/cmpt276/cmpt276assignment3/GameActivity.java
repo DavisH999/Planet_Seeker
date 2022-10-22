@@ -74,8 +74,6 @@ public class GameActivity extends AppCompatActivity {
         for(int i = 0; i < NUM_ROWS; i++){
             for(int j = 0; j < NUM_COLS; j++){
 
-//                Button button = buttons[i][j];
-
                 Button button = buttons[i][j];
 
                 int finalI = i;
@@ -130,7 +128,6 @@ public class GameActivity extends AppCompatActivity {
 
     private void loadGame()
     {
-//        instanceOfGame = Game.getInstanceOfGame();
         loadSavedGame();
         NUM_ROWS = instanceOfGame.getNUM_ROWS();
         NUM_COLS = instanceOfGame.getNUM_COLS();

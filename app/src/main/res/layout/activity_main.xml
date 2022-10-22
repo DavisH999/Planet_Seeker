@@ -30,7 +30,7 @@
 
     <ImageView
         android:id="@+id/iv_welcome"
-        android:layout_width="621dp"
+        android:layout_width="311dp"
         android:layout_height="250dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_goToMainManu"
         app:layout_constraintEnd_toEndOf="parent"

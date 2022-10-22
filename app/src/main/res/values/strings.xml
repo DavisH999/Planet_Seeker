@@ -8,7 +8,7 @@
     <string name="course">"Course page:\n"
             "https://opencoursehub.cs.sfu.ca/bfraser/grav-cms/cmpt276/home\n"</string>
     <string name="author">"Author:\n"
-            "Written by Dongwei Han, a student taking CMPT276 at SFU.\n"</string>
+            "Written by Dongwei Han and Xinyu Liu, students taking CMPT276 at SFU.\n"</string>
     <string name="res">"Resources:\n"
             "1. https://www.space.com/44-venus-second-planet-from-the-sun-brightest-planet-in-solar-system.html\n"
             "2. https://www.mos.org/planetarium/explore-the-universe-live\n"
@@ -23,7 +23,7 @@
     <string name="message">Great! You found all planets and win the game!</string>
     <string name="select_board_size">Select board size</string>
     <string name="select_number_planets">Select number planets</string>
-    <string name="planet_seeker_by_dongwei_han">Planet Seeker By Dongwei Han</string>
+    <string name="planet_seeker_by">Planet Seeker By Dongwei Han and Xinyu Liu</string>
     <string name="go_to_main_menu">Go to main menu</string>
     <string name="planet_seeker">Planet Seeker</string>
     <string name="game">Game</string>
