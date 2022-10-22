@@ -28,7 +28,7 @@ import java.lang.reflect.Type;
 import ca.cmpt276.cmpt276assignment3.model.BoolAndInt;
 import ca.cmpt276.cmpt276assignment3.model.Game;
 
-// game page
+// game page.
 public class GameActivity extends AppCompatActivity {
 
     Game instanceOfGame;
